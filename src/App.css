@@ -1,0 +1,167 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the body with a background color */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the entire application */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Style the header */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style the MovieList container */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Style individual movies */
+.movie {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s;
+  width: 100%; /* Movie cards take full width on small screens */
+}
+
+/* Style movie titles */
+.movie h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style movie images */
+.movie img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style movie ratings */
+.star-rating {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #f1c40f; /* Yellow color for stars */
+}
+
+/* Style review list */
+.review-list {
+  margin-top: 20px;
+}
+
+/* Style individual reviews */
+.review {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* Style review form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #61dafb; /* Blue color for the button */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4285f4; /* Darker blue on hover */
+}
+
+/* Responsive layout adjustments */
+@media (min-width: 768px) {
+  /* Adjust the number of columns in the grid for larger screens */
+  .movie-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  /* Increase font size for larger screens */
+  h1 {
+    font-size: 36px;
+  }
+}
+/* ReviewForm.css */
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.rating-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.review-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #61dafb;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #4285f4;
+}
+
